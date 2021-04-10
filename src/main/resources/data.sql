@@ -1,0 +1,1 @@
+INSERT INTO clerk (name) values ('suzuki ichiro');
