@@ -11,7 +11,11 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+        <input v-model="cid" placeholder="input clerk id">
+        <div>{{info.id}}</div>
+        <div>{{info.name}}</div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
