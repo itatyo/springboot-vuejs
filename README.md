@@ -254,3 +254,9 @@ public class ClerkController {
 * 下記 URL にアクセスする
   * http://localhost:18080/
 * テキストボックスとメッセージが表示されていて、テキストボックスに2を入力すると表示内容が変わることが確認できればおｋ
+
+## Lombok を使えるようにする
+* build.gradle の dependencies に Lombok を追加する
+  * https://projectlombok.org/setup/gradle
+* IntelliJ で Lombok を使えるようにする
+  * https://projectlombok.org/setup/intellij
