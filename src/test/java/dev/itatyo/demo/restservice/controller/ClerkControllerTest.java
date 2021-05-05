@@ -1,4 +1,4 @@
-package dev.itatyo.demo.restservice;
+package dev.itatyo.demo.restservice.controller;
 
 import dev.itatyo.demo.Clerk;
 import dev.itatyo.demo.ClerkMapper;

@@ -1,4 +1,4 @@
-package dev.itatyo.demo.restservice;
+package dev.itatyo.demo.restservice.controller;
 
 import dev.itatyo.demo.Clerk;
 import dev.itatyo.demo.ClerkMapper;
@@ -18,6 +18,10 @@ public class ClerkController {
 
     @GetMapping("/clerk")
     public Clerk clerk(@RequestParam(value = "id", defaultValue = "1") int id) {
-        return clerkMapper.findByID(id);
+        Clerk clerk = clerkMapper.findByID(id);
+        if (clerk.equals(null)) {
+            throw new RuntimeException();
+        }
+        return clerk;
     }
 }
