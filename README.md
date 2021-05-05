@@ -260,3 +260,6 @@ public class ClerkController {
   * https://projectlombok.org/setup/gradle
 * IntelliJ で Lombok を使えるようにする
   * https://projectlombok.org/setup/intellij
+
+## @RestControllerAdvice で例外をする
+* https://github.com/itatyo/springboot-vuejs/commit/ab2aa5afad1ecdb7f24f9c6d039809d045b56f38
