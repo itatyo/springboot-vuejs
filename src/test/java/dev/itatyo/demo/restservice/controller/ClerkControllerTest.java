@@ -26,7 +26,8 @@ class ClerkControllerTest {
 
     @BeforeEach
     void initMocks() {
-        mockMvc = MockMvcBuilders.standaloneSetup(clerkController).build();
+        mockMvc = MockMvcBuilders.standaloneSetup(clerkController)
+                .setControllerAdvice(new ControllerExceptionHandler()).build();
     }
 
     @Test
