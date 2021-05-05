@@ -2,16 +2,14 @@ package dev.itatyo.demo.restservice.controller;
 
 import dev.itatyo.demo.Clerk;
 import dev.itatyo.demo.ClerkMapper;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
+@RequiredArgsConstructor
 public class ClerkController {
     private final ClerkMapper clerkMapper;
-
-    public ClerkController(ClerkMapper clerkMapper) {
-        this.clerkMapper = clerkMapper;
-    }
 
     @GetMapping("/clerk")
     public Clerk clerk(@RequestParam(value = "id", defaultValue = "1") int id) {
